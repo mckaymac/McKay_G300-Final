@@ -707,8 +707,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Distance: 0
   Hurt: {fileID: 1897842677}
+  Salt: {fileID: 0}
   SaltObject: {fileID: 0}
+  Bone: {fileID: 0}
   BoneObject: {fileID: 0}
+  Rock: {fileID: 0}
   RockObject: {fileID: 0}
 --- !u!1 &148112910
 GameObject:
@@ -4973,8 +4976,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Distance: 0
   Hurt: {fileID: 1897842677}
-  SaltObject: {fileID: 0}
+  Salt: {fileID: 737721764}
+  SaltObject: {fileID: 64866298}
+  Bone: {fileID: 1314460416}
   BoneObject: {fileID: 0}
+  Rock: {fileID: 1143746415}
   RockObject: {fileID: 0}
 --- !u!4 &1483629534 stripped
 Transform:

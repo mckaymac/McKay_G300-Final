@@ -14,11 +14,11 @@ public class Player : MonoBehaviour
 
     public AudioSource Hurt;
     private int goal;
-    private Text Salt;
+    public Text Salt;
     public GameObject SaltObject;
-    private Text Bone;
+    public Text Bone;
     public GameObject BoneObject;
-    private Text Rock;
+    public Text Rock;
     public GameObject RockObject;
     // Start is called before the first frame update
     void Start()
