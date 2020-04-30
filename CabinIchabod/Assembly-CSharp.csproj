@@ -2,6 +2,8 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
+    <CscToolPath>C:\Program Files\Unity\Hub\Editor\2019.2.0f1\Editor\Data\Tools\RoslynScripts</CscToolPath>
+    <CscToolExe>unity_csc.bat</CscToolExe>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{FFB2F3FB-D28E-43AD-F7D4-988804D7536F}</ProjectGuid>
+    <ProjectGuid>{5BA0EF28-045F-E8D3-27CB-D9647AAB9CAA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -170,31 +172,31 @@
      <None Include="Assets\NVJOB Water Shader SAF\Example Scenes\Shaders\SpeedTree\STBCustom.shader" />
      <None Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/Mac McKay/Documents/G310-GameProduction/Production Final/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>C:/Users/Mac McKay/Documents/G310-GameProduction/McKay_G300-Final/CabinIchabod/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/Mac McKay/Documents/G310-GameProduction/Production Final/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>C:/Users/Mac McKay/Documents/G310-GameProduction/McKay_G300-Final/CabinIchabod/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/Mac McKay/Documents/G310-GameProduction/Production Final/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/Mac McKay/Documents/G310-GameProduction/McKay_G300-Final/CabinIchabod/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/Mac McKay/Documents/G310-GameProduction/Production Final/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/Mac McKay/Documents/G310-GameProduction/McKay_G300-Final/CabinIchabod/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/Mac McKay/Documents/G310-GameProduction/Production Final/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>C:/Users/Mac McKay/Documents/G310-GameProduction/McKay_G300-Final/CabinIchabod/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Users/Mac McKay/Documents/G310-GameProduction/Production Final/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>C:/Users/Mac McKay/Documents/G310-GameProduction/McKay_G300-Final/CabinIchabod/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/Mac McKay/Documents/G310-GameProduction/Production Final/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>C:/Users/Mac McKay/Documents/G310-GameProduction/McKay_G300-Final/CabinIchabod/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/Mac McKay/Documents/G310-GameProduction/Production Final/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/Mac McKay/Documents/G310-GameProduction/McKay_G300-Final/CabinIchabod/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/Mac McKay/Documents/G310-GameProduction/Production Final/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/Mac McKay/Documents/G310-GameProduction/McKay_G300-Final/CabinIchabod/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -730,7 +732,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{103C5190-090A-B9AF-0B85-3C0424360431}</Project>
+      <Project>{6E53E916-E737-25C4-43E5-1CDD8340D20B}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
   </ItemGroup>
