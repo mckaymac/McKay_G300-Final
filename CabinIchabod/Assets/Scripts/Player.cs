@@ -41,7 +41,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collider other){
+    void OnTriggerEnter(Collider other){
         if(other.gameObject.CompareTag("Salt")){
             goal++;
             other.gameObject.SetActive(false);
