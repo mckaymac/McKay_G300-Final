@@ -12,26 +12,36 @@ public class PickUpBook: MonoBehaviour
     public GameObject Command;
     private Text CommandText;
     public GameObject Item;
-    private int Timer;
+    private float Timer;
+    public GameObject BookOne;
+    private Text BookTextOne;
+    public GameObject BookTwo;
+    private Text BookTextTwo;
+    public GameObject BookThree;
+    private Text BookTextThree;
 
     void Awake()
     {
         CommandKeyText = CommandKey.GetComponent<Text>();
         CommandText = Command.GetComponent<Text>();
+        BookTextOne = BookOne.GetComponent<Text>();
+        BookTextTwo = BookTwo.GetComponent<Text>();
+        BookTextThree = BookThree.GetComponent<Text>();
     }
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
          Distance = Player.TargetDistance;
-         if(Timer > 15){
+         if(Timer > 15.0f){
              CommandText.text = "";
          }
+         Timer = Timer + Time.deltaTime;
     }
 
      void OnMouseOver(){
@@ -44,7 +54,10 @@ public class PickUpBook: MonoBehaviour
             if(Input.GetButtonDown("Action")){
                 Timer = 0;
                 CommandKey.SetActive(false);
-                CommandText.text = "To send back those who mean you harm, gather these items three: the bone of a holy man, salt, and a stone blacker than night.";
+                CommandText.text = "To send back those who mean you harm,";
+                BookTextOne.text = "gather these items three:";
+                BookTextTwo.text = "the bone of a holy man, salt,";
+                BookTextThree.text ="and a stone blacker than night.";
 
             }
         }
