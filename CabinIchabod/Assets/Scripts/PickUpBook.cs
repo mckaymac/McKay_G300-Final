@@ -13,20 +13,14 @@ public class PickUpBook: MonoBehaviour
     private Text CommandText;
     public GameObject Item;
     private float Timer;
-    public GameObject BookOne;
-    private Text BookTextOne;
-    public GameObject BookTwo;
-    private Text BookTextTwo;
-    public GameObject BookThree;
-    private Text BookTextThree;
+    public GameObject Book;
+    private Text BookText;
 
     void Awake()
     {
         CommandKeyText = CommandKey.GetComponent<Text>();
         CommandText = Command.GetComponent<Text>();
-        BookTextOne = BookOne.GetComponent<Text>();
-        BookTextTwo = BookTwo.GetComponent<Text>();
-        BookTextThree = BookThree.GetComponent<Text>();
+        BookText = Book.GetComponent<Text>();
     }
     // Start is called before the first frame update
     void Start()
@@ -52,12 +46,10 @@ public class PickUpBook: MonoBehaviour
             Command.SetActive(true);
 
             if(Input.GetButtonDown("Action")){
-                Timer = 0;
                 CommandKey.SetActive(false);
-                CommandText.text = "To send back those who mean you harm,";
-                BookTextOne.text = "gather these items three:";
-                BookTextTwo.text = "the bone of a holy man, salt,";
-                BookTextThree.text ="and a stone blacker than night.";
+                Command.SetActive(false);
+                Book.SetActive(true);
+
 
             }
         }
