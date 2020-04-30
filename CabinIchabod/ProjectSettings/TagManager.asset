@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Ammo
   - Bullets
+  - Salt
+  - Bone
+  - Rock
   layers:
   - Default
   - TransparentFX

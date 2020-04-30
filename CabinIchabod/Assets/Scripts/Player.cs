@@ -12,10 +12,11 @@ public class Player : MonoBehaviour
     public float Distance;
 
     public AudioSource Hurt;
+    private int goal;
     // Start is called before the first frame update
     void Start()
     {
-        
+        goal = 0;
     }
 
     public void DecreaseHealth(float healthLoss){
@@ -26,6 +27,8 @@ public class Player : MonoBehaviour
             SceneManager.LoadScene("Game Over");
         }
     }
+
+    void On
 
     // Update is called once per frame
     void Update()
