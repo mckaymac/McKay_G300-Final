@@ -14,9 +14,7 @@ public class PickUpPistol : MonoBehaviour
     private Text CommandText;
     public GameObject WorldGun;
     public GameObject PlayerGun;
-
     public Image Crosshair;
-
     public Image Bullet1;
     public Image Bullet2;
     public Image Bullet3;
@@ -47,7 +45,7 @@ public class PickUpPistol : MonoBehaviour
     void OnMouseOver(){
         if(Distance < 2){
             CommandKeyText.text = "[e]";
-            CommandText.text = "Pick Up Pistol";
+            CommandText.text = "Pick Up";
             CommandKey.SetActive(true);
             Command.SetActive(true);
 

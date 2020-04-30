@@ -13,13 +13,14 @@ public class Pistol : MonoBehaviour
     public AudioSource Reload;
     public AudioSource EmptyClick;
     public float Distance;
+    public GameObject Player;
     // public GameObject CommandKey;
     // private Text CommandKeyText;
     // public GameObject Command;
     // private Text CommandText;
     private int ammo = 7;
     // public GameObject AmmoBox;
-    private int extraAmmo = 7;
+    private int extraAmmo = 35;
     private float Damage = 25.0f;
     // private bool flag = false;
 
@@ -31,12 +32,8 @@ public class Pistol : MonoBehaviour
     public Image Bullet5;
     public Image Bullet6;
     public Image Bullet7;
-
     private int totalAmmo;
-
-
     private int TotalAmmo;
-
     private bool flag = true;
 
     
@@ -140,7 +137,7 @@ public class Pistol : MonoBehaviour
         if(Input.GetButtonDown("Fire1")){
             StartCoroutine(FirePistol());
         }
-        if(Input.GetButtonDown("Reload")){
+        if(Input.GetButtonDown("Reload") && ammo <= 7){
             StartCoroutine(ReloadGun());
         }
 

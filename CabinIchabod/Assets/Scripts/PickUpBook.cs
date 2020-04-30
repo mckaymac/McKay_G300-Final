@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PickUpItem : MonoBehaviour
+public class PickUpBook: MonoBehaviour
 {
     public float Distance;
     public GameObject CommandKey;
@@ -12,6 +12,7 @@ public class PickUpItem : MonoBehaviour
     public GameObject Command;
     private Text CommandText;
     public GameObject Item;
+    private int Timer;
 
     void Awake()
     {
@@ -28,19 +29,22 @@ public class PickUpItem : MonoBehaviour
     void Update()
     {
          Distance = Player.TargetDistance;
+         if(Timer > 15){
+             CommandText.text = "";
+         }
     }
 
      void OnMouseOver(){
         if(Distance < 2){
             CommandKeyText.text = "[e]";
-            CommandText.text = "Pick Up Item";
+            CommandText.text = "Read Book";
             CommandKey.SetActive(true);
             Command.SetActive(true);
 
             if(Input.GetButtonDown("Action")){
-                Item.SetActive(false);
+                Timer = 0;
                 CommandKey.SetActive(false);
-                CommandText.text = "You picked up the item!";
+                CommandText.text = "To send back those who mean you harm, gather these items three: the bone of a holy man, salt, and a stone blacker than night.";
 
             }
         }
