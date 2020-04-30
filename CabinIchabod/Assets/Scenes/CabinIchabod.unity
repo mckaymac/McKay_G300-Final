@@ -615,7 +615,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 64866298}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5000001
   m_Height: 2
@@ -707,6 +707,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Distance: 0
   Hurt: {fileID: 1897842677}
+  SaltObject: {fileID: 0}
+  BoneObject: {fileID: 0}
+  RockObject: {fileID: 0}
 --- !u!1 &148112910
 GameObject:
   m_ObjectHideFlags: 0
@@ -4970,6 +4973,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Distance: 0
   Hurt: {fileID: 1897842677}
+  SaltObject: {fileID: 0}
+  BoneObject: {fileID: 0}
+  RockObject: {fileID: 0}
 --- !u!4 &1483629534 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0,

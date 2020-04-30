@@ -26,6 +26,12 @@ public class Player : MonoBehaviour
         goal = 0;
     }
 
+    void Awake(){
+        Rock = RockObject.GetComponent<Text>();
+        Bone = BoneObject.GetComponent<Text>();
+        Salt = SaltObject.GetComponent<Text>();
+    }
+
     public void DecreaseHealth(float healthLoss){
         Health = Health - healthLoss;
         Hurt.Play();
@@ -37,18 +43,21 @@ public class Player : MonoBehaviour
 
     void OnCollisionEnter(Collider other){
         if(other.gameObject.CompareTag("Salt")){
+            goal++;
             other.gameObject.SetActive(false);
-            //add text
+            SaltObject.SetActive(true);
         }
 
         if(other.gameObject.CompareTag("Bone")){
+            goal++;
             other.gameObject.SetActive(false);
-
+            BoneObject.SetActive(true);
         }
 
         if(other.gameObject.CompareTag("Rock")){
+            goal++;
             other.gameObject.SetActive(false);
-
+            RockObject.SetActive(true);
         }
 
         if(other.gameObject.CompareTag("Goal") && (goal == 3)){

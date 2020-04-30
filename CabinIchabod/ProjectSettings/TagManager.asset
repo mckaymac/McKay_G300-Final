@@ -9,6 +9,7 @@ TagManager:
   - Salt
   - Bone
   - Rock
+  - Goal
   layers:
   - Default
   - TransparentFX
