@@ -6,7 +6,7 @@ public class CreateZombie : MonoBehaviour
 {
     private ZombieFactory Factory;
     //public GameObject Player;
-    private static float SpawnTime = 5.0f;
+    private static float SpawnTime = 15.0f;
 
     public float Timer;
 

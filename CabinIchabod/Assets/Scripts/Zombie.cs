@@ -12,7 +12,7 @@ public class Zombie : MonoBehaviour
 
     private bool Attacking = false;
 
-    private float Health = 100.0f;
+    private float Health = 50.0f;
 
     private float Timer = 0.0f;
 

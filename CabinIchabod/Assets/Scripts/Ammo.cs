@@ -14,7 +14,6 @@ public class Ammo : MonoBehaviour
     private int ammo = 7;
     public GameObject AmmoBox;
     private int extraAmmo = 0;
-    private float Damage = 25.0f;
     private bool flag = true;
     public float Distance;
     public AudioSource OpenNoise;
@@ -31,7 +30,6 @@ public class Ammo : MonoBehaviour
             Command.SetActive(true);
 
             if(Input.GetButtonDown("Action")){
-                StartCoroutine(AmmoBoxInt());
                 CommandKey.SetActive(false);
                 Command.SetActive(false);                
             }
@@ -44,7 +42,6 @@ public class Ammo : MonoBehaviour
     }
     
     void Awake(){
-        Animator = GetComponent<Animator>();
         CommandKeyText = CommandKey.GetComponent<Text>();
         CommandText = Command.GetComponent<Text>();
 

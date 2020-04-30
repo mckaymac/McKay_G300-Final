@@ -39,7 +39,7 @@ public class ZombieFactory : MonoBehaviour
         //A set starting Y-pos such that the zombie does not fall through 
         //the terrain. We can (and should) determine the height of the terrain at the
         //random X,Z location from the terrain and base the Y value from that
-        var startPositionY = 10.0f;
+        var startPositionY = 5.0f;
         var startPositionX = (float) (random.NextDouble() - 0.5f) * scaleX;
         var startPositionZ = (float) (random.NextDouble() - 0.5f) * scaleZ;
         var startPosition = new Vector3(startPositionX, startPositionY, startPositionZ);
