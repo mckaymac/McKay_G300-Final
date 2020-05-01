@@ -38,6 +38,8 @@ public class PickUpBook: MonoBehaviour
          Timer = Timer + Time.deltaTime;
     }
 
+
+    //Put book text up on the screen
      void OnMouseOver(){
         if(Distance < 2){
             CommandKeyText.text = "[e]";

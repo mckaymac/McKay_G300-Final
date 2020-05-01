@@ -26,6 +26,7 @@ public class Zombie : MonoBehaviour
         }
     }
 
+    //Kill the zombie and trigger its animation
     IEnumerator ZombieDeath(){
         Animator.SetTrigger("Death");
         yield return new WaitForSeconds(1.2f);
@@ -33,6 +34,7 @@ public class Zombie : MonoBehaviour
 
     }
 
+    //Attack player and trigger animation
     IEnumerator Attack(){
         Attacking = true;
         Animator.SetTrigger("Attack");
@@ -52,6 +54,7 @@ public class Zombie : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Measurue distance to player
         RaycastHit objectHit;
         if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out objectHit)){
             var distance = objectHit.distance;

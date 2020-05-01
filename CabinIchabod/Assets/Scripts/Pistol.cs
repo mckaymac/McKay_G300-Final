@@ -38,6 +38,7 @@ public class Pistol : MonoBehaviour
 
     
 
+    //Shoot pistol and play sound effects
     IEnumerator FirePistol(){
 
         RaycastHit objectShot;
@@ -61,6 +62,7 @@ public class Pistol : MonoBehaviour
         
     }
 
+    //Reload the gun and take from the extraAmmo pool
     IEnumerator ReloadGun(){
         if(flag == true){
             flag = false;
@@ -125,6 +127,7 @@ public class Pistol : MonoBehaviour
     }
 
     // Update is called once per frame
+    //Keep track of the bullets in the gun
     void Update()
     {
         // RaycastHit objectHit;

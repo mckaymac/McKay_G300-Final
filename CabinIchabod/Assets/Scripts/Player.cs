@@ -23,6 +23,7 @@ public class Player : MonoBehaviour
         goal = 0;
     }
 
+    //Decrease hp when hit by zombies
     public void DecreaseHealth(float healthLoss){
         Health = Health - healthLoss;
         Hurt.Play();
@@ -32,6 +33,7 @@ public class Player : MonoBehaviour
         }
     }
 
+    //Act as the gate for completing the game
     void OnTriggerEnter(Collider other){
         if(other.gameObject.CompareTag("Salt")){
             goal++;
@@ -60,12 +62,14 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Measure distance from player to object
         RaycastHit objectHit;
         if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out objectHit)){
             Distance = objectHit.distance;
             TargetDistance = Distance;
         }
 
+        //Quit the game 
         if(Input.GetKey("escape")){
             Application.Quit();
         }
