@@ -52,7 +52,7 @@ public class Player : MonoBehaviour
         }
 
         if(other.gameObject.CompareTag("Goal") && (goal == 3)){
-            //SceneManager.LoadScene("You Win");
+            SceneManager.LoadScene("Victory");
         }
 
     }
