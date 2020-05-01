@@ -5,10 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Terrain.unity
     guid: 6297abc024684f149985b79afa337e7f
   - enabled: 1
+    path: Assets/Scenes/CabinIchabod.unity
+    guid: 9c5251cdd3f9ccb4885aa427d80a1b87
+  - enabled: 1
     path: Assets/Scenes/Game Over.unity
     guid: ecaaa5267c434154f8ceaac03a5e8151
+  - enabled: 1
+    path: Assets/Scenes/Victory.unity
+    guid: 358763f9c778c7444a95b3b5aea2057d
   m_configObjects: {}

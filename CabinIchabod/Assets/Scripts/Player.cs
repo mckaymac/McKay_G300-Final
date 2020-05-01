@@ -65,6 +65,10 @@ public class Player : MonoBehaviour
             Distance = objectHit.distance;
             TargetDistance = Distance;
         }
+
+        if(Input.GetKey("escape")){
+            Application.Quit();
+        }
         
     }
 }
