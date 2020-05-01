@@ -14,22 +14,13 @@ public class Player : MonoBehaviour
 
     public AudioSource Hurt;
     private int goal;
-    public Text Salt;
     public GameObject SaltObject;
-    public Text Bone;
     public GameObject BoneObject;
-    public Text Rock;
     public GameObject RockObject;
     // Start is called before the first frame update
     void Start()
     {
         goal = 0;
-    }
-
-    void Awake(){
-        Rock = RockObject.GetComponent<Text>();
-        Bone = BoneObject.GetComponent<Text>();
-        Salt = SaltObject.GetComponent<Text>();
     }
 
     public void DecreaseHealth(float healthLoss){
